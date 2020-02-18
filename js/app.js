@@ -99,11 +99,14 @@ for (var k = 0; k < 6; k++){
   for (var w = 0; w < myFavmovies.length; w++) {
     if (movies === myFavmovies[w]) {
       alert('you are agood follower ');
+      score++;
       w = 7;
       k=9;
     }
     
     } 
   }
+  alert("yr score is  "+ score +"/7");
+
 
 
