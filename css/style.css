@@ -7,16 +7,17 @@ body h1 {
     font-family: verdana;
     /*display: block;*/
     background-image: url("../img/reham.jpeg");
-    background-size: 100%;
+    background-size: 100%; /*or cover */
     background-repeat: no-repeat;
     text-align : center;
     font-size: 50px;
     padding: 50px 30px;
     margin: auto;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 
-ul{
+nav ul{
     text-align: center;
 }
 
@@ -37,14 +38,21 @@ nav ul li a {
     padding: 5px 20px ;
 }
 
-pre {
+pre , .list {
     background-color:beige;
     color: #9b4f4f;
     font-family: verdana;
     font-size: 20px;
-    margin: 40px;
+    margin: 20px;
 }
-
+ul.list{
+    list-style-type: square;
+    margin-left: 70px;
+}
+ol.list{
+    list-style-type: decimal;
+    margin-left: 70px;
+}
 h2 { 
     font-family: cursive;
     color: rgb(197, 117, 60);
@@ -58,4 +66,16 @@ footer{
     display: block;
     text-align: center;
     margin:30px ;
+}
+h3 { 
+    font-family: cursive;
+    color: rgb(197, 117, 60);
+    margin: 40px;
+    font-size: x-large;
+}
+h4 { 
+    font-family: cursive;
+    color: rgb(197, 117, 60);
+    margin: 40px;
+    font-size: x-large;
 }

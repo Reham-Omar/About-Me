@@ -1,54 +1,109 @@
-'use strict'
-var person = prompt("Please enter your name", "Reham Omar");
+'use strict';
+var score = 0;
 
-if (person != null) {
-  alert("hello   " + person + "   how are you today?");
+var userName = prompt('guess my name ?');
+if (userName === 'reham') {
+  alert("hello  my name is " + userName);
+  score++;
 
-}
-console.log(person);
-
-var jordan = prompt("Are you from jordan ? (yes or no)").toLowerCase();
-if (jordan == "yes") {
-  alert("I'm from jordan too , I really like u are in my page  ");
-} else if (jordan == "no") {
-  alert("I'm so excited to enter my web page   ");
-} /*else while (jordan !== "yes" && jordan !== "no");
-{
-  var jordan = prompt("Are you from jordan ? (yes or no)");
-
-}*/
-console.log(jordan);
-
-var old = prompt("tell me how old are you ?");
-if (old >= 18) {
-  alert("I'm also above 18 , I'm 23  ");
 } else {
-  alert(" you are not adult yes so be carefull when you use the internet  ");
+  alert('oops my name is Reham ');
 }
-console.log(old);
+console.log(userName);
 
-var hope = prompt("do you want to be abiomedical engineer like me ? (yes or no) ").toLowerCase();
-if (hope == "yes") {
-  alert("i advice u to study it if yr intersting in saling or maintenance  ");
-} else if (hope == "no") {
-  alert("I advice u to study coding   ");
+var isJordanian = prompt("Is me from jordan ? (yes or no)").toLowerCase();
+switch (isJordanian) {
+  case 'yes':
+  case 'y':
+    alert('you guess ');
+    score++;
+    break;
+  case 'no':
+  case 'n':
+    alert('I\'m from JORDAN');
+  default:
+    break;
 }
-console.log(hope);
+console.log(isJordanian);
 
-var draw = prompt("tell me do u like drawing  ? (yes or no )").toLowerCase();
-if (draw == "yes") {
-  alert(" you are like me  ");
-} else if (draw == "no") {
-  alert("oooh why , its the way to get the stress out   ");
+var age = prompt('guess how old is me ?');
+var myage = Number(age);
+if (myage === 23) {
+  alert(' yes ;) I\'m 23  ');
+  score++;
+} else {
+  alert(' ooops , I\'m 23');
 }
-console.log(draw);
+console.log(myage);
 
+var MyStuding = prompt("Is me abiomedical engineer  ? (yes or no) ").toLowerCase();
+switch (MyStuding) {
+  case 'yes':
+  case 'y':
+    alert('you guess  ');
+    score++;
+    break;
+  case 'no':
+  case 'n':
+    alert('thats false , I\'m BME');
+  default:
+    break;
+}
+console.log(MyStuding);
 
+var likeDrawing = prompt(" do i like drawing  ? (yes or no )").toLowerCase();
+switch (likeDrawing) {
+  case 'yes':
+  case 'y':
+    alert(' i hope u like it like me ');
+    score++;
+    break;
+  case 'no':
+  case 'n':
+    alert('thats false , I love it so much');
+  default:
+    break;
+}
 
+console.log(likeDrawing);
 
+var timestudying = prompt('guess how long is my studies in univesity ?').toLowerCase();
+var mytimestudying = Number(timestudying);
 
+if (mytimestudying === 5) {
 
+  alert(' that\'s true  ');
+  score++;
+} else {
 
+  for (var j = 0; j < 3; j++) {
+    timestudying = prompt('guess how long is my studies in univesity ?').toLowerCase();
+    mytimestudying = Number(timestudying);
+    if (mytimestudying === 5) {
 
+      alert(' that\'s true  ');
+      score++;
+    } else if (mytimestudying > 0 && mytimestudying <= 4)
+      alert(' its too low ');
+    else {
+      (mytimestudying > 5);
+      alert(' its  too high');
+    }
+  }
+}
+alert('I sudied for 5 years  ');
+
+var myFavmovies = ['harry potter', 'the princess swith', 'snow white', 'aladdin 2019', 'arrival'];
+for (var k = 0; k < 6; k++){
+  var movies = prompt('guess my favourite movies  ?').toLowerCase();
+  for (var w = 0; w < myFavmovies.length; w++) {
+    if (movies === myFavmovies[w]) {
+      alert('you are agood follower ');
+      w = 7;
+      k=9;
+    }
+    
+    } 
+  }
 
 
