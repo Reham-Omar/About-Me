@@ -83,30 +83,31 @@ if (mytimestudying === 5) {
 
       alert(' that\'s true  ');
       score++;
-    } else if (mytimestudying > 0 && mytimestudying <= 4)
+    } else if (mytimestudying > 0 && mytimestudying <= 4) {
       alert(' its too low ');
-    else {
+    } else {
       (mytimestudying > 5);
       alert(' its  too high');
     }
   }
+  alert('I sudied for 5 years  ');
 }
-alert('I sudied for 5 years  ');
+
 
 var myFavmovies = ['harry potter', 'the princess swith', 'snow white', 'aladdin 2019', 'arrival'];
-for (var k = 0; k < 6; k++){
+for (var k = 0; k < 6; k++) {
   var movies = prompt('guess my favourite movies  ?').toLowerCase();
   for (var w = 0; w < myFavmovies.length; w++) {
     if (movies === myFavmovies[w]) {
       alert('you are agood follower ');
       score++;
       w = 7;
-      k=9;
+      k = 9;
     }
-    
-    } 
+
   }
-  alert("yr score is  "+ score +"/7");
+}
+alert("yr score is  " + score + "/7");
 
 
 
