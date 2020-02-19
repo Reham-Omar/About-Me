@@ -1,6 +1,6 @@
 'use strict';
 var score = 0;
-
+function nameName(){
 var userName = prompt('guess my name ?');
 if (userName === 'reham') {
   alert("hello  my name is " + userName);
@@ -8,9 +8,11 @@ if (userName === 'reham') {
 
 } else {
   alert('oops my name is Reham ');
-}
-console.log(userName);
+}}
+nameName();
+//console.log(userName);
 
+function nationality(){
 var isJordanian = prompt("Is me from jordan ? (yes or no)").toLowerCase();
 switch (isJordanian) {
   case 'yes':
@@ -23,9 +25,10 @@ switch (isJordanian) {
     alert('I\'m from JORDAN');
   default:
     break;
-}
-console.log(isJordanian);
-
+}}
+nationality();
+//console.log(isJordanian);
+function guessAge(){
 var age = prompt('guess how old is me ?');
 var myage = Number(age);
 if (myage === 23) {
@@ -33,24 +36,29 @@ if (myage === 23) {
   score++;
 } else {
   alert(' ooops , I\'m 23');
-}
-console.log(myage);
+}}
+guessAge();
+//console.log(myage);
 
-var MyStuding = prompt("Is me abiomedical engineer  ? (yes or no) ").toLowerCase();
-switch (MyStuding) {
+function mymajor(){
+var major = prompt("Is me abiomedical engineer  ? (yes or no) ").toLowerCase();
+switch (major) {
   case 'yes':
   case 'y':
-    alert('you guess  ');
+    alert('you guess');
     score++;
     break;
   case 'no':
   case 'n':
     alert('thats false , I\'m BME');
+    break;
   default:
     break;
-}
-console.log(MyStuding);
+}}
+mymajor();
+//console.log(major);
 
+function hope(){
 var likeDrawing = prompt(" do i like drawing  ? (yes or no )").toLowerCase();
 switch (likeDrawing) {
   case 'yes':
@@ -61,12 +69,14 @@ switch (likeDrawing) {
   case 'no':
   case 'n':
     alert('thats false , I love it so much');
+    break;
   default:
     break;
-}
+}}
+hope();
+//console.log(likeDrawing);
 
-console.log(likeDrawing);
-
+function period(){
 var timestudying = prompt('guess how long is my studies in univesity ?').toLowerCase();
 var mytimestudying = Number(timestudying);
 
@@ -91,9 +101,10 @@ if (mytimestudying === 5) {
     }
   }
   alert('I sudied for 5 years  ');
-}
-
-
+}}
+period();
+// console.log(mytimestudying);
+ function movie(){
 var myFavmovies = ['harry potter', 'the princess swith', 'snow white', 'aladdin 2019', 'arrival'];
 for (var k = 0; k < 6; k++) {
   var movies = prompt('guess my favourite movies  ?').toLowerCase();
@@ -106,8 +117,7 @@ for (var k = 0; k < 6; k++) {
     }
 
   }
-}
+}}
+movie();
+
 alert("yr score is  " + score + "/7");
-
-
-
