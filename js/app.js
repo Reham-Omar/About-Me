@@ -1,6 +1,6 @@
 'use strict';
 var score = 0;
-
+function nameName(user){
 var userName = prompt('guess my name ?');
 if (userName === 'reham') {
   alert("hello  my name is " + userName);
@@ -8,9 +8,11 @@ if (userName === 'reham') {
 
 } else {
   alert('oops my name is Reham ');
-}
-console.log(userName);
+}}
+nameName();
+//console.log(userName);
 
+function nationality(jordan){
 var isJordanian = prompt("Is me from jordan ? (yes or no)").toLowerCase();
 switch (isJordanian) {
   case 'yes':
@@ -23,9 +25,10 @@ switch (isJordanian) {
     alert('I\'m from JORDAN');
   default:
     break;
-}
-console.log(isJordanian);
-
+}}
+nationality();
+//console.log(isJordanian);
+function NavAge(age1){
 var age = prompt('guess how old is me ?');
 var myage = Number(age);
 if (myage === 23) {
@@ -33,9 +36,11 @@ if (myage === 23) {
   score++;
 } else {
   alert(' ooops , I\'m 23');
-}
-console.log(myage);
+}}
+NavAge();
+//console.log(myage);
 
+function major(eng){
 var MyStuding = prompt("Is me abiomedical engineer  ? (yes or no) ").toLowerCase();
 switch (MyStuding) {
   case 'yes':
@@ -48,9 +53,11 @@ switch (MyStuding) {
     alert('thats false , I\'m BME');
   default:
     break;
-}
-console.log(MyStuding);
+}}
+major;
+//console.log(MyStuding);
 
+function hope(draw){
 var likeDrawing = prompt(" do i like drawing  ? (yes or no )").toLowerCase();
 switch (likeDrawing) {
   case 'yes':
@@ -63,10 +70,11 @@ switch (likeDrawing) {
     alert('thats false , I love it so much');
   default:
     break;
-}
+}}
+hope();
+//console.log(likeDrawing);
 
-console.log(likeDrawing);
-
+function period(){
 var timestudying = prompt('guess how long is my studies in univesity ?').toLowerCase();
 var mytimestudying = Number(timestudying);
 
@@ -92,18 +100,24 @@ if (mytimestudying === 5) {
   }
 }
 alert('I sudied for 5 years  ');
+} period();
 
+function movie(){
 var myFavmovies = ['harry potter', 'the princess swith', 'snow white', 'aladdin 2019', 'arrival'];
 for (var k = 0; k < 6; k++){
   var movies = prompt('guess my favourite movies  ?').toLowerCase();
   for (var w = 0; w < myFavmovies.length; w++) {
     if (movies === myFavmovies[w]) {
       alert('you are agood follower ');
+      score++;
       w = 7;
       k=9;
     }
     
     } 
-  }
+  }}
+  movie();
+
+  alert('your score is ' + score +'/7')
 
 
