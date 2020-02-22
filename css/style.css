@@ -1,53 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme|Pacifico|Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rancho&display=swap');
 body{
     background-color: beige;
 }
  
-body h1 {
+header {
     color: rgb(208, 119, 27);
-    font-family: verdana;
-    /*display: block;*/
-    background-image: url("../img/reham.jpeg");
-    background-size: 100%; /*or cover */
-    background-repeat: no-repeat;
-    text-align : center;
+    font-family: 'Acme';
+    background-color: black;
     font-size: 50px;
-    padding: 50px 30px;
-    margin: auto;
-    margin-bottom: 30px;
+    padding: 39px 40px 100px 3px;
+    margin: 30px , 40px;
     font-weight: bold;
-}
-
-nav ul{
-    text-align: center;
-}
+    width: 100%;
+    position:sticky;
+    top:0;
+   }
 
 nav ul li {
-    display: inline-block;
-    background-color: gray;
-    padding: 20px 40px ;
-    margin:0px 25px;
+        display: inline-block;
+        margin:0px 15px;
 }
 
 nav ul li a { 
     background-color: #eeeeee;
     color: goldenrod;
-    text-align : center;
-    width: 125px;
-    height: 600px;
+    text-decoration: none;
     font-size: 18px;
-    padding: 5px 20px ;
+    padding: 5px 25px ;
+}
+nav ul li a:hover{
+    color:rgb(61, 58, 54);
+}
+#about{
+    background-image:url(https://img.freepik.com/free-vector/red-abstract-hand-painted-background_23-2148293334.jpg?size=626&ext=jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /*or cover */
+
+    }
+
+#about{
+    color: #9a5050;
+    font-family: verdana;
+    font-size:26px;
+    margin: 20px;
+    text-align: center;
+    padding:100px;
+    
+}
+#about h2{
+    text-align: center;
+    font-size:35px;
+    color :rgb(44, 76, 86)
 }
 
-pre , .list {
+#my-education h2{
+    text-align: center;
+    font-size:35px;
+
+}
+#my-fav-top-movies h2{
+    text-align: center;
+    font-size:35px;
+
+}
+#contact-me h2{
+    text-align: center;
+    font-size:35px;
+
+}
+ .list {
     background-color:beige;
     color: #9b4f4f;
-    font-family: verdana;
-    font-size: 20px;
+    font-family: 'Rancho' ;
+    font-size: 35px;
     margin: 20px;
 }
 ul.list{
     list-style-type: square;
-    margin-left: 70px;
+    margin-left: 40px;
 }
 ol.list{
     list-style-type: decimal;
@@ -56,10 +89,8 @@ ol.list{
 h2 { 
     font-family: cursive;
     color: rgb(197, 117, 60);
-    margin: 40px;
-    font-size: x-large;
+    margin: 75px;
 }
-
 footer{ 
     color: rgb(250, 249, 249);
     background-color: rgb(8, 8, 8);
@@ -67,15 +98,27 @@ footer{
     text-align: center;
     margin:30px ;
 }
-h3 { 
-    font-family: cursive;
+p  {
+    font-family: 'Shadows Into Light';
     color: rgb(197, 117, 60);
-    margin: 40px;
-    font-size: x-large;
+    font-size: 30px;
+    text-align: center;
 }
-h4 { 
-    font-family: cursive;
+h3{
+    font-family: 'Pacifico';
     color: rgb(197, 117, 60);
-    margin: 40px;
-    font-size: x-large;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    text-align-last: center;
+    font-size: 30px;
 }
+.logo{
+    float: left;
+    scroll-padding-right: 30px ;
+}
+.my-nav{
+   float: right; 
+}
+
+
+

@@ -120,4 +120,4 @@ for (var k = 0; k < 6; k++) {
 }}
 movie();
 
-alert("yr score is  " + score + "/7");
+alert("your score is  " + score + "/7");
