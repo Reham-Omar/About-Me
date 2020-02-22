@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Acme|Pacifico|Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rancho&display=swap');
 body{
+    overflow-x: hidden;
     background-color: beige;
 }
  
@@ -45,7 +46,7 @@ nav ul li a:hover{
     color: #9a5050;
     font-family: verdana;
     font-size:26px;
-    margin: 10px;
+    margin-top: 10px;
     text-align: center;
     padding:50px;
     width: 100%;
@@ -80,7 +81,7 @@ nav ul li a:hover{
 }
 ul.list{
     list-style-type: square;
-    margin-left: 40px;
+    margin-left: 70px;
 }
 ol.list{
     list-style-type: decimal;
@@ -93,7 +94,7 @@ h2 {
 }
 footer{ 
     color: rgb(250, 249, 249);
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(85, 70, 70);
     display: block;
     text-align: center;
     margin:30px ;
@@ -114,7 +115,7 @@ h3{
 }
 .logo{
     float: left;
-    scroll-padding-right: 30px ;
+    padding-left: 30px ;
 }
 .my-nav{
    float: right; 
