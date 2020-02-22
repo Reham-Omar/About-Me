@@ -48,7 +48,7 @@ nav ul li a:hover{
     margin: 10px;
     text-align: center;
     padding:50px;
-    
+    width: 100%;
 }
 #about h2{
     text-align: center;
@@ -59,7 +59,6 @@ nav ul li a:hover{
 #my-education h2{
     text-align: center;
     font-size:35px;
-
 }
 #my-fav-top-movies h2{
     text-align: center;
@@ -77,6 +76,7 @@ nav ul li a:hover{
     font-family: 'Rancho' ;
     font-size: 35px;
     margin: 20px;
+    width: 100%;
 }
 ul.list{
     list-style-type: square;
